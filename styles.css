@@ -1,0 +1,1404 @@
+ /* =========================
+    RESET
+    ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #070707;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+    /* =========================
+    CORES
+    ========================= */
+
+:root {
+
+    --black: #070707;
+
+    --black-2: #101010;
+
+    --black-3: #171717;
+
+    --red: #8a2be2;
+
+    --red-dark: #b90000;
+
+    --white: #ffffff;
+
+    --gray: #929292;
+
+    --border: rgba(255, 255, 255, 0.09);
+
+}
+
+
+/* =========================
+   menu superior
+========================= */
+
+.sidebar nav {
+
+position: fixed;
+top: 0;
+left: 0;
+width: 100;
+height: 75px;
+background: #0a0a0a;
+z-index: 9999;
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 30px;
+
+
+}
+
+
+.logo {
+
+    font-size: 100px;
+
+    font-weight: 900;   
+
+    letter-spacing: 2px;
+
+    margin-bottom: 80px;
+
+}
+
+
+header
+
+.logo span,
+.footer-logo span {
+
+    color: var(--red-dark);
+
+}
+
+
+.sidebar nav{
+
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 40px;
+
+    background: #080808;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+}
+
+
+.sidebar nav a {
+
+    color: #777;
+
+    text-decoration: none;
+
+    padding: 10px 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+}
+
+
+.sidebar nav a i {
+
+    width: 20px;
+
+}
+
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+
+    color: white;
+
+    background: #151515;
+
+    border-left: 3px solid var(--red);
+
+}
+
+
+.sidebar-bottom {
+
+    margin-top: auto;
+
+    color: #555;
+
+    font-size: 10px;
+
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+
+    margin-left: 240px;
+
+    width: calc(100% - 240px);
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 680px;
+
+    padding: 80px 7%;
+
+    display: grid;
+
+    grid-template-columns: 45% 55%;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    position: relative;
+
+    background:
+
+        radial-gradient(
+            circle at 70% 50%,
+            rgba(255, 20, 20, .13),
+            transparent 40%
+        );
+
+}
+
+
+.tag {
+
+    color: var(--red);
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(50px, 7vw, 105px);
+
+    line-height: .85;
+
+    margin: 25px 0;
+
+    font-weight: 900;
+
+    letter-spacing: -5px;
+
+}
+
+
+.hero h1 span {
+
+    color: var(--red);
+
+}
+
+
+.hero p {
+
+    max-width: 500px;
+
+    color: #999;
+
+    line-height: 1.0;
+
+    margin-bottom: 35px;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.btn-red,
+.btn-outline {
+
+    padding: 16px 25px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: px;
+
+    transition: .3s;
+
+}
+
+
+.btn-red {
+
+    background: var(--red);
+
+    color: white;
+
+}
+
+
+.btn-red:hover {
+
+    background: white;
+
+    color: black;
+
+}
+
+
+.btn-outline {
+
+    border: 1px solid #333;
+
+    color: white;
+
+}
+
+
+.btn-outline:hover {
+
+    border-color: var(--red);
+
+    color: var(--red);
+
+}
+
+
+/* =========================
+   HERO BIKE
+========================= */
+
+.hero-bike {
+
+    position: relative;
+
+    height: 550px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.hero-bike img {
+
+    width: 300%;
+
+    height: 650px;
+
+    object-fit: cover;
+
+    filter: grayscale(100%);
+
+    opacity: .8;
+
+    mask-image:
+        linear-gradient(
+            to right,
+            transparent,
+            black 20%,
+            black 80%,
+            transparent
+        );
+
+}
+
+
+.red-circle {
+
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    border-radius: 50%;
+
+    background: var(--red);
+
+    opacity: .13;
+
+}
+
+
+.speed-box {
+
+    position: absolute;
+
+    right: 5%;
+
+    bottom: 50px;
+
+    background: var(--red);
+
+    padding: 20px 30px;
+
+    display: flex;
+
+    flex-direction: col;
+
+}
+
+
+.speed-box strong {
+
+    font-size: 22px;
+
+}
+
+
+.speed-box span {
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    background: #101010;
+
+    border-top: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.stats div {
+
+    padding: 30px;
+
+    border-right: 1px solid var(--border);
+
+}
+
+
+.stats strong {
+
+    display: block;
+
+    color: var(--white);
+
+    font-size: 28px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.stats span {
+
+    color: #fff8f8;
+
+    font-size: 15px;
+
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+
+    padding: 100px 2%;
+
+}
+
+
+.section-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 45px;
+
+}
+
+
+.section-title span {
+
+    color: var(--red);
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.section-title h2 {
+
+    font-size: 38px;
+
+    margin-top: 10px;
+
+}
+
+
+/* =========================
+   SELECT
+========================= */
+
+select {
+
+    background: #111;
+
+    color: white;
+
+    border: 1px solid #333;
+
+    padding: 14px 20px;
+
+    outline: none;
+
+}
+
+
+/* =========================
+   BIKE GRID
+========================= */
+
+.bike-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, minmax(0, 1fr));
+
+    gap: 18px;
+
+}
+
+
+.bike-card {
+
+    background: #101010;
+
+    border: 1px solid var(--border);
+
+    overflow: hidden;
+
+    transition: .35s;
+
+}
+
+
+.bike-card:hover {
+
+    transform: translateY(-70px);
+
+    border-color: rgba(48, 6, 125, 0.5);
+
+}
+
+
+.bike-image {
+
+    height: 200px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #171717;
+
+}
+
+
+.bike-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: grayscale(0%);
+
+    transition: .5s;
+
+}
+
+
+.bike-card:hover .bike-image img {
+
+    transform: scale(1.08);
+
+    filter: grayscale(0);
+
+}
+
+
+.badge {
+
+    position: absolute;
+
+    left: 15px;
+
+    top: 15px;
+
+    background: var(--red);
+
+    padding: 7px 10px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    z-index: 2;
+
+}
+
+
+.badge.premium {
+
+    background: white;
+
+    color: black;
+
+}
+
+
+.bike-info {
+
+    padding: 25px;
+
+}
+
+
+.bike-info small {
+
+    color: var(--red);
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.bike-info h3 {
+
+    font-size: 27px;
+
+    margin: 7px 0 12px;
+
+}
+
+
+.bike-info p {
+
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    min-height: 60px;
+
+}
+
+
+.specs {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin: 20px 0;
+
+    padding: 15px 0;
+
+    border-top: 1px solid #222;
+
+    border-bottom: 1px solid #222;
+
+    flex-wrap: wrap;
+
+}
+
+
+.specs span {
+
+    font-size: 9px;
+
+    color: #aaa;
+
+}
+
+
+.specs i {
+
+    color: var(--red);
+
+    margin-right: 4px;
+
+}
+
+
+.price small {
+
+    display: block;
+
+    color: #666;
+
+}
+
+
+.price strong {
+
+    font-size: 22px;
+
+    display: block;
+
+    margin-top: 5px;
+
+}
+
+
+.compare-btn {
+
+    margin-top: 20px;
+
+    width: 100%;
+
+    padding: 13px;
+
+    background: transparent;
+
+    color: white;
+
+    border: 1px solid #333;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    font-size: 10px;
+
+    transition: .3s;
+
+}
+
+
+.compare-btn:hover {
+
+    background: var(--red);
+
+    border-color: var(--red);
+
+}
+
+
+/* =========================
+   COMPARAÇÃO
+========================= */
+
+.comparison {
+
+    background: #0b0b0b;
+
+}
+
+
+.comparison-box {
+
+    border: 1px solid #252525;
+
+}
+
+
+.comparison-header,
+.comparison-row {
+
+    display: grid;
+
+    grid-template-columns:
+        1.4fr
+        1fr
+        1fr
+        1fr
+        1.5fr;
+
+}
+
+
+.comparison-header {
+
+    background: #161616;
+
+    color: #777;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.comparison-header div,
+.comparison-row > * {
+
+    padding: 20px;
+
+    border-right: 1px solid #222;
+
+}
+
+
+.comparison-row {
+
+    border-top: 1px solid #222;
+
+    font-size: 12px;
+
+}
+
+
+.comparison-row strong {
+
+    color: white;
+
+}
+
+
+.comparison-row span {
+
+    color: #888;
+
+}
+
+
+.green {
+
+    color: #40d98a;
+
+}
+
+
+.yellow {
+
+    color: #ffd43b;
+
+}
+
+
+.table-note {
+
+    color: #555;
+
+    font-size: 10px;
+
+    margin-top: 15px;
+
+}
+
+
+/* =========================
+   SALÁRIO
+========================= */
+
+.salary-section {
+
+    padding: 100px 7%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #111,
+            #070707
+        );
+
+}
+
+
+.salary-text span {
+
+    color: var(--red);
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.salary-text h2 {
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: .95;
+
+    margin: 20px 0;
+
+}
+
+
+.salary-text h2 strong {
+
+    color: var(--red);
+
+}
+
+
+.salary-text p {
+
+    color: #777;
+
+    max-width: 500px;
+
+    line-height: 1.7;
+
+}
+
+
+.warning {
+
+    margin-top: 30px;
+
+    padding: 18px;
+
+    background: #171717;
+
+    border-left: 3px solid var(--red);
+
+    display: flex;
+
+    gap: 15px;
+
+    color: #888;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+}
+
+
+.warning i {
+
+    color: var(--red);
+
+}
+
+
+/* =========================
+   CALCULATOR
+========================= */
+
+.calculator {
+    width: 100%;
+}
+.calculator label{
+
+    display: block;
+    color: #ffffff;
+    
+    background: #111;
+
+    padding: 35px;
+
+    border: 1px solid #272727;
+
+}
+
+
+.calculator label {
+
+    display: block;
+
+    color: #888;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    margin: 20px 0 8px;
+
+}
+
+
+.input-money {
+
+    display: flex;
+
+    background: #080808;
+
+    border: 1px solid #460a90;
+
+}
+
+
+.input-money span {
+
+    padding: 15px;
+
+    font-weight: bold;
+
+
+}
+
+
+.input-money input,
+.calculator select {
+
+    width: 100%;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    padding: 2  5px;
+
+    outline: none;
+
+}
+
+
+.calculate {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 17px;
+
+    border: none;
+
+    background: var(--red);
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.result {
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    background: #080808;
+
+    border: 1px solid #252525;
+
+    color: #aaa;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================
+   LOJAS
+========================= */
+
+.store-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.store-card {
+
+    display: flex;
+
+    gap: 20px;
+
+    background: #101010;
+
+    padding: 25px;
+
+    border: 1px solid #222;
+
+    transition: .3s;
+
+}
+
+
+.store-card:hover {
+
+    border-color: var(--red);
+
+}
+
+
+.store-icon {
+
+    width: 45px;
+    height: 45px;
+
+    min-width: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--red);
+
+}
+
+
+.store-card small {
+
+    color: var(--red);
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.store-card h3 {
+
+    margin: 6px 0;
+
+}
+
+
+.store-card p {
+
+    color: #777;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+
+}
+
+
+.store-card a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    padding: 50px 7%;
+
+    border-top: 1px solid #222;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.footer-logo {
+
+    font-weight: 900;
+
+    font-size: 22px;
+
+}
+
+
+footer p {
+
+    color: #555;
+
+    font-size: 10px;
+
+}
+
+
+.social {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+.social i {
+
+    color: #777;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.social i:hover {
+
+    color: var(--red);
+
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 1200px) {
+
+    .bike-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .store-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .sidebar {
+
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        padding: 20px;
+
+    }
+
+    .sidebar .logo {
+
+        margin-bottom: 20px;
+
+    }
+
+    .sidebar nav {
+
+        flex-direction: row;
+
+        overflow-x: auto;
+
+    }
+
+    .sidebar nav a {
+
+        white-space: nowrap;
+
+    }
+
+    .sidebar-bottom {
+
+        display: none;
+
+    }
+
+    .content {
+
+        margin-left: 0;
+
+        width: 100%;
+
+    }
+
+    .hero {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .hero-bike {
+
+        height: 400px;
+
+    }
+
+    .stats {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .salary-section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .hero {
+
+        padding: 60px 25px;
+
+    }
+
+    .section {
+
+        padding: 70px 25px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 55px;
+
+    }
+
+    .bike-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .comparison-box {
+
+        overflow-x: auto;
+
+    }
+
+    .comparison-header,
+    .comparison-row {
+
+        min-width: 750px;
+
+    }
+
+    .salary-section {
+
+        padding: 70px 25px;
+
+    }
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+
+    }
+
+    
+
+}

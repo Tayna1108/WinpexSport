@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Winpex Sport - Cadastre sua moto</title>
+
+    <link rel="stylesheet" href="cadastro.css">
+
+    <link rel="stylesheet" href="cadastro.js">
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <div class="logo">
+            Winpex<span>Sport</span>
+        </div>
+
+        <nav>
+            <a href="#">Início</a>
+            <a href="#cadastro">Cadastrar</a>
+            <a href="#motos">Motos</a>
+            <a href="index.html">Voltar</a>
+            
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- TÍTULO -->
+        <section class="titulo">
+
+            <h1>Cadastro de Motos Esportivas</h1>
+
+            <p>
+                Cadastre as motos carenadas que farão parte
+                do catálogo e das comparações.
+            </p>
+
+        </section>
+
+
+        <!-- FORMULÁRIO -->
+        <section class="formulario" id="cadastro">
+
+            <h2>Cadastre uma moto</h2>
+
+            <form id="formMoto">
+
+                <div class="linha">
+
+                    <div class="campo">
+
+                        <label for="marca">Marca *</label>
+
+                        <select id="marca" required>
+
+                            <option value="">
+                                Selecione a marca
+                            </option>
+
+                            <option>Yamaha</option>
+                            <option>Kawasaki</option>
+                            <option>BMW</option>
+                            <option>Ducati</option>
+                            <option>Honda</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="modelo">Modelo *</label>
+
+                        <input
+                            type="text"
+                            id="modelo"
+                            placeholder="Ex.: R15, Ninja 300, S1000RR"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo pequeno">
+
+                        <label for="ano">Ano *</label>
+
+                        <input
+                            type="number"
+                            id="ano"
+                            placeholder="2026"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="linha">
+
+                    <div class="campo">
+
+                        <label for="cilindrada">
+                            Cilindrada (cc) *
+                        </label>
+
+                        <input
+                            type="number"
+                            id="cilindrada"
+                            placeholder="Ex.: 600"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="potencia">
+                            Potência (cv) *
+                        </label>
+
+                        <input
+                            type="number"
+                            step="0.1"
+                            id="potencia"
+                            placeholder="Ex.: 120"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="marchas">
+                            Marchas *
+                        </label>
+
+                        <input
+                            type="number"
+                            id="marchas"
+                            placeholder="6"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="linha">
+
+                    <div class="campo">
+
+                        <label for="preco">
+                            Preço aproximado (R$) *
+                        </label>
+
+                        <input
+                            type="number"
+                            id="preco"
+                            placeholder="Ex.: 59990"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="categoria">
+                            Categoria *
+                        </label>
+
+                        <select id="categoria" required>
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option>Esportiva</option>
+                            <option>Superesportiva</option>
+                            <option>Sport Touring</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="experiencia">
+                            Nível indicado
+                        </label>
+
+                        <select id="experiencia">
+
+                            <option>Iniciante</option>
+                            <option>Intermediário</option>
+                            <option>Avançado</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="linha">
+
+                    <div class="campo">
+
+                        <label for="cidade">
+                            Cidade
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cidade"
+                            placeholder="Ex.: Franca - SP"
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="imagem">
+                            Imagem da moto
+                        </label>
+
+                        <input
+                            type="text"
+                            id="imagem"
+                            placeholder="Nome ou caminho da imagem"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOTÕES -->
+                <div class="botoes">
+
+                    <button
+                        type="reset"
+                        class="limpar"
+                    >
+                        Limpar
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="cadastrar"
+                    >
+                        Cadastrar moto
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- TABELA -->
+        <section class="tabela" id="motos">
+
+            <h2>Motos cadastradas</h2>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Ano</th>
+                            <th>Cilindrada</th>
+                            <th>Potência</th>
+                            <th>Preço</th>
+                            <th>Nível</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="listaMotos">
+
+                        <tr>
+
+                            <td>Yamaha</td>
+                            <td>R15</td>
+                            <td>2026</td>
+                            <td>155 cc</td>
+                            <td>18,8 cv</td>
+                            <td>R$ 24.990</td>
+
+                            <td>
+                                <span class="tag">
+                                    Iniciante
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Kawasaki</td>
+                            <td>ZX-6R</td>
+                            <td>2026</td>
+                            <td>636 cc</td>
+                            <td>124 cv</td>
+                            <td>R$ 75.000</td>
+
+                            <td>
+                                <span class="tag">
+                                    Avançado
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>BMW</td>
+                            <td>S1000RR</td>
+                            <td>2026</td>
+                            <td>999 cc</td>
+                            <td>210 cv</td>
+                            <td>R$ 130.000</td>
+
+                            <td>
+                                <span class="tag">
+                                    Avançado
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Ducati</td>
+                            <td>Panigale V4</td>
+                            <td>2026</td>
+                            <td>1103 cc</td>
+                            <td>216 cv</td>
+                            <td>R$ 160.000</td>
+
+                            <td>
+                                <span class="tag">
+                                    Avançado
+                                </span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        MotoSport © 2026
+        — Motos esportivas e comparação de modelos.
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

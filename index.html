@@ -1,0 +1,1168 @@
+```html
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <title>Winpex Sport</title>
+</head>
+
+<body>
+
+    <!-- ==============================
+         MENU
+    =============================== -->
+    <aside class="sidebar">
+
+        <header>
+
+            <nav id="menu">
+
+                <a href="#inicio" class="active">
+                    Início
+                </a>
+
+                <a href="#motos">
+                    <i class="fa-solid fa-motorcycle"></i>
+                    Motos
+                </a>
+
+                <a href="#comparar">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    Comparar
+                </a>
+
+                <a href="#salario">
+                    <i class="fa-solid fa-calculator"></i>
+                    Meu orçamento
+                </a>
+
+                <a href="#lojas">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Onde comprar
+                </a>
+
+                <a href="cadastro.html">Cadastrar</a>
+
+                
+
+            </nav>
+        </header>
+
+    </aside>
+
+
+    <!-- ==============================
+         CONTEÚDO
+    =============================== -->
+
+    <main class="modelos">
+
+
+        <!-- ==============================
+             INÍCIO
+        =============================== -->
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-text">
+
+                <span class="tag">
+                    <i class="fa-solid fa-bolt"></i>
+                    Guia de motos esportivas
+                </span>
+
+                <h1>
+                    Somente para Amante
+                    <br>
+                    <span>de Motos</span> Carenadas
+                </h1>
+
+                <p>
+                    Compare motos carenadas, desempenho,
+                    tecnologia, manutenção e preço
+                    antes de escolher a sua.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#motos" class="btn-hed">
+                        Ver motos
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#salario" class="btn-online">
+                        Calcular orçamento
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-bike">
+
+                <div class="red-circle"></div>
+
+                <img
+                    src="fotos/cimamoto.jpg"
+                    alt="BMW S1000RR"
+                >
+
+        
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             ESTATÍSTICAS
+        =============================== -->
+
+        <section class="stats">
+
+            <div>
+                <strong>06+</strong>
+                <span>Modelos Analisados</span>
+            </div>
+
+            <div>
+                <strong>5</strong>
+                <span>Marcas</span>
+            </div>
+
+            <div>
+                <strong>SP</strong>
+                <span>Localização</span>
+            </div>
+
+            <div>
+                <strong>R$</strong>
+                <span>Comparação de Preço</span>
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             MOTOS
+        =============================== -->
+
+        <section id="motos" class="section">
+
+            <div class="section-title">
+
+                <div>
+                    <span>Escolha sua moto</span>
+                    <h2>Mais procuradas</h2>
+                </div>
+
+
+                <!-- FILTRO CORRIGIDO -->
+
+                <select id="filtroMarca">
+
+                    <option value="todas">
+                        Todas as marcas
+                    </option>
+
+                    <option value="Yamaha">
+                        Yamaha
+                    </option>
+
+                    <option value="Kawasaki">
+                        Kawasaki
+                    </option>
+
+                    <option value="BMW">
+                        BMW
+                    </option>
+
+                    <option value="Ducati">
+                        Ducati
+                    </option>
+
+                    <option value="Honda">
+                        Honda
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="bike-grid" id="bikegrid">
+
+
+                <!-- R15 -->
+
+                <article
+                    class="bike-card"
+                    data-marca="Yamaha"
+                    data-modelo="R15"
+                >
+
+                    <div class="bike-image">
+
+                        <span class="badge">
+                            Yamaha R15 ABS
+                        </span>
+
+                        <img
+                            src="fotos/R15 v3.jpg"
+                            alt="Yamaha R15"
+                        >
+
+                    </div>
+
+
+                    <div class="bike-info">
+
+                        <small>Yamaha</small>
+
+                        <h3>R15 ABS</h3>
+
+                        <p>
+                            Esportiva de 155 cc, compacta,
+                            tecnológica e com proposta de
+                            entrada no mundo das carenadas.
+                        </p>
+
+
+                        <div class="specs">
+
+                            <span>
+                                <i class="fa-solid fa-gauge-high"></i>
+                                155 cc
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-bolt"></i>
+                                18,8 cv
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-gears"></i>
+                                6 marchas
+                            </span>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            <small>A partir de</small>
+
+                            <strong>
+                                R$ 24.990,00
+                            </strong>
+
+                        </div>
+
+
+                        <button
+                            class="Compare-btn"
+                            onclick="adicionarComparacao('R15')"
+                        >
+                            Comparar
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- R3 -->
+
+                <article
+                    class="bike-card"
+                    data-marca="Yamaha"
+                    data-modelo="R3"
+                >
+
+                    <div class="bike-image">
+
+                        <span class="badge premium">
+                            Yamaha R3 ABS
+                        </span>
+
+                        <img
+                            src="fotos/R3 yamaha.jpg"
+                            alt="Yamaha R3"
+                        >
+
+                    </div>
+
+
+                    <div class="bike-info">
+
+                        <small>Yamaha</small>
+
+                        <h3>R3 ABS</h3>
+
+                        <p>
+                            Motor bicilíndrico de 321 cc,
+                            oferecendo mais desempenho sem
+                            entrar na categoria das superbikes.
+                        </p>
+
+
+                        <div class="specs">
+
+                            <span>
+                                <i class="fa-solid fa-gauge-high"></i>
+                                321 cc
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-bolt"></i>
+                                42 cv
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-gears"></i>
+                                6 marchas
+                            </span>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            <small>A partir de</small>
+
+                            <strong>
+                                R$ 37.190,00
+                            </strong>
+
+                        </div>
+
+
+                        <button
+                            class="Compare-btn"
+                            onclick="adicionarComparacao('R3')"
+                        >
+                            Comparar
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CBR 650R -->
+
+                <article
+                    class="bike-card"
+                    data-marca="Honda"
+                    data-modelo="CBR"
+                >
+
+                    <div class="bike-image">
+
+                        <span class="badge premium">
+                            Honda CBR650r                        </span>
+
+                        <img
+                            src="fotos/cbr650r.jpg"
+                            alt="Honda CBR 650R"
+                        >
+
+                    </div>
+
+
+                    <div class="bike-info">
+
+                        <small>Honda</small>
+
+                        <h3>CBR 650R</h3>
+
+                        <p>
+                            Esportiva de média cilindrada,
+                            conhecida pelo conjunto de quatro
+                            cilindros e proposta mais premium.
+                        </p>
+
+
+                        <div class="specs">
+
+                            <span>
+                                <i class="fa-solid fa-gauge-high"></i>
+                                649 cc
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-bolt"></i>
+                                86 cv
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-gears"></i>
+                                6 marchas
+                            </span>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            <small>Referência</small>
+
+                            <strong>
+                                R$ 62.600,00
+                            </strong>
+
+                        </div>
+
+
+                        <button
+                            class="Compare-btn"
+                            onclick="adicionarComparacao('CBR 650R')"
+                        >
+                            Comparar
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- NINJA 300 -->
+
+                <article
+                    class="bike-card"
+                    data-marca="Kawasaki"
+                    data-modelo="Ninja"
+                >
+
+                    <div class="bike-image">
+
+                        <span class="badge">
+                            Kawasaki Ninja 300
+                        </span>
+
+                        <img
+                            src="fotos/Kawasaki ninja 300 (1).jpg"
+                            alt="Kawasaki Ninja 300"
+                        >
+
+                    </div>
+
+
+                    <div class="bike-info">
+
+                        <small>Kawasaki</small>
+
+                        <h3>Ninja 300</h3>
+
+                        <p>
+                            Ninja 300 com visual esportivo,
+                            agilidade e desempenho marcante
+                            para quem busca emoção na pilotagem.
+                        </p>
+
+
+                        <div class="specs">
+
+                            <span>
+                                <i class="fa-solid fa-motorcycle"></i>
+                                296 cc
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-bolt"></i>
+                                39 cv
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-shield"></i>
+                                6 marchas
+                            </span>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            <small>A partir de</small>
+
+                            <strong>
+                                R$ 29.382,00
+                            </strong>
+
+                        </div>
+
+
+                        <button
+                            class="Compare-btn"
+                            onclick="adicionarComparacao('Ninja 300')"
+                        >
+                            Comparar
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BMW S1000RR -->
+
+                <article
+                    class="bike-card"
+                    data-marca="BMW"
+                    data-modelo="BMWS1000RR"
+                >
+
+                    <div class="bike-image">
+
+                        <span class="badge premium">
+                            BMW S1000RR
+                        </span>
+
+                        <img
+                            src="fotos/bmw s1000rr (1).jpg"
+                            alt="BMW S1000RR"
+                        >
+
+                    </div>
+
+
+                    <div class="bike-info">
+
+                        <small>BMW</small>
+
+                        <h3>S1000RR</h3>
+
+                        <p>
+                            Superesportiva de alta cilindrada,
+                            com quatro cilindros e desempenho
+                            de alto nível, combinando tecnologia,
+                            potência e visual agressivo.
+                        </p>
+
+
+                        <div class="specs">
+
+                            <span>
+                                <i class="fa-solid fa-gauge-high"></i>
+                                999 cc
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-bolt"></i>
+                                210 cv
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-gears"></i>
+                                6 marchas
+                            </span>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            <small>Referência</small>
+
+                            <strong>
+                                R$ 129.695,00
+                            </strong>
+
+                        </div>
+
+
+                        <button
+                            class="Compare-btn"
+                            onclick="adicionarComparacao('S1000RR')"
+                        >
+                            Comparar
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PANIGALE V4 -->
+
+                <article
+                    class="bike-card"
+                    data-marca="Ducati"
+                    data-modelo="Panigale V4"
+                >
+
+                    <div class="bike-image">
+
+                        <span class="badge">
+                            Ducati Panigale V4
+                        </span>
+
+                        <img
+                            src="fotos/Ducatti Panigale V4R.jpg"
+                            alt="Ducati Panigale V4"
+                        >
+
+                    </div>
+
+
+                    <div class="bike-info">
+
+                        <small>Ducati</small>
+
+                        <h3>Panigale V4</h3>
+
+                        <p>
+                            Superesportiva de alta cilindrada,
+                            reconhecida pelo motor V4 e pelo
+                            alto desempenho, combinando potência,
+                            tecnologia e design marcante.
+                        </p>
+
+
+                        <div class="specs">
+
+                            <span>
+                                <i class="fa-solid fa-motorcycle"></i>
+                                1.103 cc
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-bolt"></i>
+                                216 cv
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-shield"></i>
+                                6 marchas
+                            </span>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            <small>A partir de</small>
+
+                            <strong>
+                                R$ 169.990,00
+                            </strong>
+
+                        </div>
+
+
+                        <button
+                            class="Compare-btn"
+                            onclick="adicionarComparacao('Panigale V4')"
+                        >
+                            Comparar
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             COMPARAÇÃO
+        =============================== -->
+
+        <section id="comparar" class="section">
+
+            <div class="section-title">
+
+                <div>
+                    <span>Decida Melhor</span>
+                    <h2>Compare Motos</h2>
+                </div>
+
+            </div>
+
+
+            <div class="comparison-box">
+
+                <div class="comparison-header">
+
+                    <div><span>Modelo</span></div>
+                    <div><span>Preço</span></div>
+                    <div><span>Cilindrada</span></div>
+                    <div><span>Perfil</span></div>
+                    <div><span>Ideal para</span></div>
+
+                </div>
+
+
+                <div class="comparison-row">
+
+                    <strong>Yamaha R15</strong>
+                    <span>R$ 24.990,00</span>
+                    <span>155 cc</span>
+                    <span><b class="green">★★★★★</b></span>
+                    <span>
+                        Entrada das motos esportivas.
+                        Ideal para quem ainda não tem
+                        experiência com motos carenadas.
+                    </span>
+
+                </div>
+
+
+                <div class="comparison-row">
+
+                    <strong>Yamaha R3</strong>
+                    <span>R$ 37.190,00</span>
+                    <span>321 cc</span>
+                    <span><b class="green">★★★★☆</b></span>
+                    <span>
+                        Esportividade e conforto.
+                        Ideal para quem já tem experiência
+                        com motos carenadas.
+                    </span>
+
+                </div>
+
+
+                <div class="comparison-row">
+
+                    <strong>Honda CBR 650R</strong>
+                    <span>R$ 62.600,00</span>
+                    <span>649 cc</span>
+                    <span><b class="yellow">★★★★★</b></span>
+                    <span>
+                        Alta performance.
+                        Ideal para quem busca esportividade,
+                        desempenho e uso no dia a dia.
+                    </span>
+
+                </div>
+
+
+                <div class="comparison-row">
+
+                    <strong>Kawasaki Ninja 300</strong>
+                    <span>R$ 29.382,00</span>
+                    <span>296 cc</span>
+                    <span><b class="yellow">★★★★★</b></span>
+                    <span>
+                        Média performance.
+                        Para quem procura conforto e
+                        esportividade na mesma moto.
+                    </span>
+
+                </div>
+
+
+                <div class="comparison-row">
+
+                    <strong>BMW S1000RR</strong>
+                    <span>R$ 129.695,00</span>
+                    <span>999 cc</span>
+                    <span><b class="yellow">★★★★★</b></span>
+                    <span>
+                        Alta performance.
+                        Para quem busca adrenalina,
+                        velocidade e esportividade.
+                    </span>
+
+                </div>
+
+
+                <div class="comparison-row">
+
+                    <strong>Ducati Panigale V4</strong>
+                    <span>R$ 169.990,00</span>
+                    <span>1.103 cc</span>
+                    <span><b class="yellow">★★★★★</b></span>
+                    <span>
+                        Alta performance.
+                        Ideal para pilotos experientes
+                        que buscam desempenho extremo.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p class="table-note">
+                * Valores podem variar por versão, frete,
+                estoque, região e condições comerciais.
+                Consulte a concessionária.
+            </p>
+
+        </section>
+
+
+        <!-- ==============================
+             CALCULADORA
+        =============================== -->
+
+        <section id="salario" class="salary-section">
+
+
+            <div class="salary-text">
+
+                <span>Antes de Comprar</span>
+
+                <h2>
+                    Sua renda <br>
+                    <strong>Comporta a Moto?</strong>
+                </h2>
+
+                <p>
+                    Informe sua renda mensal e veja uma
+                    estimativa de quanto seria prudente
+                    reservar para uma parcela da motocicleta.
+                </p>
+
+
+                <div class="warning">
+
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+
+                    <span>
+                        A calculadora é apenas uma referência.
+                        Financiamento depende de entrada,
+                        juros, prazo e análise de crédito.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="calculatoe">
+
+
+                <!-- SALÁRIO -->
+
+                <label for="salarioInput">
+                    Sua renda mensal
+                </label>
+
+                <div class="imput-money">
+
+                    <span>R$</span>
+
+                    <input
+                        type="number"
+                        id="salarioInput"
+                        placeholder="3500"
+                        min="0"
+                        step="0.01"
+                    >
+
+                </div>
+
+
+                <!-- MOTO -->
+
+                <label for="motoPreco">
+                    Preço da moto
+                </label>
+
+                <select id="motoPreco">
+
+                    <option value="24990">
+                        Yamaha R15 - R$ 24.990,00
+                    </option>
+
+                    <option value="37190">
+                        Yamaha R3 - R$ 37.190,00
+                    </option>
+
+                    <option value="62600">
+                        Honda CBR 650R - R$ 62.600,00
+                    </option>
+
+                    <option value="29382">
+                        Kawasaki Ninja 300 - R$ 29.382,00
+                    </option>
+
+                    <option value="129695">
+                        BMW S1000RR - R$ 129.695,00
+                    </option>
+
+                    <option value="169990">
+                        Ducati Panigale V4 - R$ 169.990,00
+                    </option>
+
+                </select>
+
+
+                <!-- ENTRADA -->
+
+                <label for="entradaInput">
+                    Entrada
+                </label>
+
+                <div class="input-money">
+
+                    <span>R$</span>
+
+                    <input
+                        type="number"
+                        id="entradaInput"
+                        placeholder="Digite o valor da entrada"
+                        min="0"
+                        step="0.01"
+                    >
+
+                </div>
+
+
+                <!-- BOTÃO -->
+
+                <button
+                    type="button"
+                    class="calculate"
+                    onclick="calcularMoto()"
+                >
+
+                    Analisar
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <!-- RESULTADO -->
+
+                <div
+                    id="resultado"
+                    class="result"
+                >
+
+                    Preencha os dados para realizar a análise.
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             LOJAS
+        =============================== -->
+
+        <section id="lojas" class="section">
+
+            <div class="section-title">
+
+                <div>
+
+                    <span>Estado de São Paulo</span>
+
+                    <h2>Onde procurar</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="store-grild">
+
+
+                <div class="store-card">
+
+                    <div class="store-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+
+                        <small>Yamaha</small>
+
+                        <h3>Yamaha Nacar</h3>
+
+                        <p>
+                            Av. dos Bandeirantes, 2059 —
+                            Vila Olímpia, São Paulo - SP
+                        </p>
+
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=Yamaha+Nacar+Av.+dos+Bandeirantes+2059+São+Paulo"
+                            target="_blank"
+                        >
+                            Ver no mapa
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="store-card">
+
+                    <div class="store-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+
+                        <small>Kawasaki</small>
+
+                        <h3>Kawasaki One</h3>
+
+                        <p>
+                            Av. dos Bandeirantes, 1877 —
+                            Vila Olímpia, São Paulo - SP
+                        </p>
+
+                        <a
+                            href="https://www.google.com/maps/place/Av.+dos+Bandeirantes,+1+-+Vila+Ol%C3%ADmpia,+S%C3%A3o+Paulo+-+SP,+04553-012"
+                            target="_blank"
+                        >
+                            Ver no mapa
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="store-card">
+
+                    <div class="store-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+
+                        <small>Honda</small>
+
+                        <h3>Hido Motos</h3>
+
+                        <p>
+                            Av. Pres. Vargas, 1057 -
+                            Cidade Nova, Franca - SP,
+                            14401-110
+                        </p>
+
+                        <a
+                            href="https://www.google.com/maps/place/Honda+Hido+Motos"
+                            target="_blank"
+                        >
+                            Ver no mapa
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="store-card">
+
+                    <div class="store-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+
+                        <small>BMW</small>
+
+                        <h3>Grand Brasil Itaim</h3>
+
+                        <p>
+                            Rua Clodomiro Amazonas, 1540
+                            — São Paulo
+                        </p>
+
+                        <a
+                            href="https://www.google.com/maps/place/BMW+Motorrad+Grand+Brasil+Itaim"
+                            target="_blank"
+                        >
+                            Ver no mapa
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="store-card">
+
+                    <div class="store-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+
+                        <small>Ducati</small>
+
+                        <h3>Ducati São Paulo</h3>
+
+                        <p>
+                            Alameda dos Nhambiquaras, 354
+                            — Moema, São Paulo - SP
+                        </p>
+
+                        <a
+                            href="https://www.google.com/maps/place/Ducati+Sao+Paulo"
+                            target="_blank"
+                        >
+                            Ver no mapa
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             FOOTER
+        =============================== -->
+
+        <footer>
+
+            <div class="footer-logo">
+                <span>WINPEX</span> SPORT
+            </div>
+
+            <p>
+                Comparação de motos esportivas e análise
+                de custo-benefício.
+            </p>
+
+            <div class="social">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </div>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- ==============================
+         JAVASCRIPT
+    =============================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
